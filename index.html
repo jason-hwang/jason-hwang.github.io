@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>결혼합니다.</title>
+    <meta property="og:title" content="황재성 &#9829; 최보윤 결혼합니다." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://rocaille.speedgabia.com/qhdbs_1021/index.html" />
+    <meta property="og:image" content="http://rocaille.speedgabia.com/qhdbs_1021/img/kakao.png">
+    <meta property="og:description" content="모바일청첩장 보러가기" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--    <script src="./css/kakao.min.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="./css/invitation2.css">
+    <!-- 전화걸기 스크립트 -->
+    <script type="text/javascript">
+        function callNumber(num) {
+            location.href = "tel:" + num;
+        }
+    </script>
+
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- 익스플로러 9 이하 버전의 html5 인식용 스크립트 -->
+    <!--[if lt ie 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!-- // 익스플로러 9 이하 버전의 html5 인식용 스크립트 -->
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <ul>
+                <li><img src="./img/img_01.png" width="720" height="1280" alt="결혼식 메인 사진"></li>
+                <li><img src="./img/img_02.png" alt="결혼식 초대글"></li>
+                <ul class="contact">
+                    <li><a href="javascript:;" onclick="callNumber(&#39;010-3162-0799&#39;)"><img src="./img/img_03.png" width="135" height="135" alt="신랑에게 전화"></a></li>
+                    <li><a href="javascript:;" onclick="callNumber(&#39;010-9766-1337&#39;)"><img src="./img/img_04.png" width="135" height="135" alt="신부에게 전화"></a></li>
+                </ul>
+                <li><img src="./img/img_05.png" alt="결혼식 초대글"></li>
+                <li><a href="./gallery.html" target="_top"><img src="./img/img_06.png" alt="갤러리"></a></li>
+                <li><img src="./img/img_07.png" alt="결혼식 초대글"></li>
+                <li><a href="http://naver.me/x8fFBq3e" target="_blank"><img src="./img/img_08.png" alt="지도 보기"></a></li>
+                <li><img src="./img/img_09.png" alt="갤러리"></li>
+                <li>
+                    <a id="kakao-link-btn" href="javascript:;">
+                        <img src="./img/img_10.png"/>
+                    </a></li>
+                <li><a href="http://smartstore.naver.com/rocaille"><img src="./img/img_11.png" alt="갤러리"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type='text/javascript'>
+        //<![CDATA[
+        // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('b38d6384284172f67bf4735f2c08cb5f');
+        // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+        Kakao.Link.createDefaultButton({
+            container: '#kakao-link-btn',
+            objectType: 'feed',
+            content: {
+                title: '황재성 & 최보윤',
+                description: '2018년 10월 21일 일요일 오후 1시\n호텔리츠컨벤션웨딩 8층 빌라드샬롯 홀',
+                imageUrl: 'http://rocaille.speedgabia.com/qhdbs_1021/img/kakao_main1.png',
+                link: {
+                    mobileWebUrl: 'http://rocaille.speedgabia.com/qhdbs_1021',
+                    webUrl: 'http://rocaille.speedgabia.com/qhdbs_1021'
+                }
+            },
+
+            buttons: [{
+                    title: '청첩장 보러가기',
+                    link: {
+                        mobileWebUrl: 'http://rocaille.speedgabia.com/qhdbs_1021',
+                        webUrl: 'http://rocaille.speedgabia.com/qhdbs_1021'
+                    }
+                },
+
+            ]
+        });
+        //]]>
+    </script>
+</body>
+</html>
